@@ -854,6 +854,7 @@
 
 .ambassador-card {
   background-color: white;
+  color: var(--primary-color);
   border-radius: 8px;
   padding: 30px;
   text-align: center;
@@ -877,7 +878,7 @@
 
 .ambassador-name {
   margin-bottom: 15px;
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .ambassador-card .social-links {
@@ -887,13 +888,13 @@
 }
 
 .ambassador-card .social-links a {
-  color: var(--text-primary);
+  color: var(--primary-color);
   font-size: 1.5rem;
   transition: var(--transition);
 }
 
 .ambassador-card .social-links a:hover {
-  color: var(--accent-color);
+  color: var(bold(255, 0, 0));
   transform: translateY(-3px);
 }
 
