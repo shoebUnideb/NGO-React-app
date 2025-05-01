@@ -1186,7 +1186,8 @@
     }
     
     .menu-toggle {
-      display: block;
+      display: flex;
+      justify-content: right;
     }
     
     .hero-title {
