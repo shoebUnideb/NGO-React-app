@@ -5,8 +5,9 @@ import { useForm, ValidationError } from '@formspree/react';
 import '../styles/main.css';
 
 const Contact = () => {
-  // Formspree integration
-  const [state, handleSubmit] = useForm("xpwdqgqd");
+  // Formspree integration - with fallback for environment variable
+  const formId = process.env.REACT_APP_FORMSPREE_ID;
+  const [state, handleSubmit] = useForm(formId);
   
   const [formData, setFormData] = useState({
     name: '',
