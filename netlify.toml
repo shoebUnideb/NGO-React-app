@@ -3,4 +3,4 @@
   publish = "build/"
 
 [build.environment]
-  NODE_VERSION = "18"  # Match your local Node version
+  NODE_VERSION = "22" 
