@@ -6,6 +6,7 @@ const importAll = (ctx) => ctx.keys().map(ctx);
 const heroImages = importAll(require.context('../assets/visegrad/hero', false, /\.(png|jpe?g|gif|webp)$/i));
 const visegradImages = importAll(require.context('../assets/visegrad/featured', false, /\.(png|jpe?g|gif|webp)$/i));
 const galleryImages = importAll(require.context('../assets/visegrad/gallery', false, /\.(png|jpe?g|gif|webp)$/i));
+const bottomImages = importAll(require.context('../assets/visegrad/bottom', false, /\.(png|jpe?g|gif|webp)$/i));
 
 const Visegrad = () => {
   const [lightbox, setLightbox] = useState(null);
@@ -24,13 +25,9 @@ const Visegrad = () => {
         </div>
       )}
       <section className="visegrad-hero">
-        <div className="visegrad-hero-images">
-          {heroImages.slice(0, 2).map((src, i) => (
-            <div className="visegrad-hero-img-wrap" key={i}>
-              <img src={src} alt={`Visegrad hero ${i + 1}`} />
-            </div>
-          ))}
-        </div>
+        {heroImages.length > 0 && (
+          <img src={heroImages[0]} alt="Visegrad hero" className="visegrad-hero-single-img" />
+        )}
       </section>
 
       <section className="about-mission">
@@ -126,6 +123,14 @@ const Visegrad = () => {
               📸 For more photos of the event, click here
             </a>
           </div>
+      </section>
+
+      <section className="visegrad-bottom-images">
+        {bottomImages.slice(0, 2).map((src, i) => (
+          <div className="visegrad-bottom-img-wrap" key={i}>
+            <img src={src} alt={`Visegrad bottom ${i + 1}`} />
+          </div>
+        ))}
       </section>
     </div>
   );
