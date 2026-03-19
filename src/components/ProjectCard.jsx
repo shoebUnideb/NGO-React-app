@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import '../styles/main.css';
 
 const ProjectCard = ({ title, description, image, tags, link }) => {
@@ -20,7 +21,11 @@ const ProjectCard = ({ title, description, image, tags, link }) => {
             <span key={index}>{tag}</span>
           ))}
         </div>
-        <a href={link} target = "blank" className="btn btn-primary">View Project</a>
+        {link.startsWith('/') ? (
+          <Link to={link} className="btn btn-primary">View Project</Link>
+        ) : (
+          <a href={link} target="_blank" rel="noreferrer" className="btn btn-primary">View Project</a>
+        )}
       </div>
     </motion.div>
   );

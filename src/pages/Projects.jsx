@@ -1,9 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import AnimatedSection from '../components/AnimatedSection';
 import '../styles/main.css';
 
 const Projects = () => {
+  const featured = {
+    title: "Visegrad Project",
+    image: "../upload/images/projects/post16.png",
+    tags: ["Visegrad, Hungary", " 2025"],
+    link: "/visegrad"
+  };
+
   const projects = [
     {
       title: "A Journey Towards Sustainability",
@@ -94,24 +102,31 @@ const Projects = () => {
       image: "../upload/images/projects/post15.png",
       tags: ["Bucharest, Romania", " 1  - 10 August 2022"],
       link: "https://cya.my.canva.site/bbed"
-    }, 
+    },
   ];
 
   return (
     <div className="projects-page">
-      <section className="projects-hero">
-        <div className="container">
-          <AnimatedSection>
-            <h1 className="section-title">Our Projects</h1>
-            <p className="subtitle">
-              Explore the innovative work created by our students and mentors.
-            </p>
-          </AnimatedSection>
+
+      <AnimatedSection>
+        <div className="projects-featured-wrap">
+          <div className="projects-featured-card">
+            <div className="projects-featured-image">
+              <img src={featured.image} alt={featured.title} />
+            </div>
+            <div className="projects-featured-content">
+              <span className="projects-featured-badge">Featured Project</span>
+              <h2>{featured.title}</h2>
+              <div className="project-tags">
+                {featured.tags.map((tag, i) => <span key={i}>{tag}</span>)}
+              </div>
+              <Link to={featured.link} className="btn btn-primary">View Project</Link>
+            </div>
+          </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       <section className="projects-list">
-        <div className="container">
           <div className="projects-grid">
             {projects.map((project, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
@@ -125,7 +140,6 @@ const Projects = () => {
               </AnimatedSection>
             ))}
           </div>
-        </div>
       </section>
     </div>
   );
