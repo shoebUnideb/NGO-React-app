@@ -48,8 +48,8 @@ const BlockField = ({ label, blocks = [], onChange, folder }) => {
   };
 
   const addBlock = (type) => {
-    onChange([...blocks, { ...BLOCK_DEFAULTS[type] }]);
-    setOpenIndex(blocks.length);
+    onChange([{ ...BLOCK_DEFAULTS[type] }, ...blocks]);
+    setOpenIndex(0);
     setShowAddMenu(false);
   };
 

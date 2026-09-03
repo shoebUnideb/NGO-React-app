@@ -32,8 +32,8 @@ const ListField = ({ label, items = [], onChange, newItem, renderItem, itemLabel
   };
 
   const addItem = () => {
-    onChange([...items, newItem()]);
-    setOpenIndex(items.length);
+    onChange([newItem(), ...items]);
+    setOpenIndex(0);
   };
 
   return (
