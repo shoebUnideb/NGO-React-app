@@ -1,8 +1,10 @@
-const OWNER = 'shoebUnideb';
-const REPO = 'NGO-React-app';
 const BRANCH = 'main';
 
-const API_ROOT = `${window.location.origin}/.netlify/git/github/repos/${OWNER}/${REPO}/contents`;
+// Git Gateway's own proxy (netlify/git-gateway's github.go) only allows paths
+// matching ^/github/(contents|git|pulls|branches|merges|statuses|compare|commits)
+// and injects the configured owner/repo itself before forwarding to GitHub's
+// Contents API — so the client must NOT include repos/{owner}/{repo} here.
+const API_ROOT = `${window.location.origin}/.netlify/git/github/contents`;
 
 function base64ToUtf8(base64) {
   const binary = atob(base64.replace(/\n/g, ''));
