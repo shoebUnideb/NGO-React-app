@@ -101,6 +101,32 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "Hungary",
+      "title": "Dasayy",
+      "heroImage": "/upload/images/projectPages/Hungary project/1788463003571-black-itachi-uchiha-desktop-r3rydvcvnig02qdw.jpg",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "this is was done because of this ",
+          "body": "iaubciaca"
+        },
+        {
+          "type": "cta",
+          "heading": "hbai",
+          "text": "enejka",
+          "buttonText": "submit",
+          "buttonLink": "nwbwidibwi"
+        },
+        {
+          "type": "gallery",
+          "heading": "foeihfoenfe",
+          "images": [
+            "/upload/images/projectPages/Hungary project/1788463078397-4.png"
+          ]
+        }
+      ]
     }
   ]
 }
