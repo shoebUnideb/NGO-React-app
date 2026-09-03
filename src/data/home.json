@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "backgroundGif": "/upload/images/home/hero-animation.gif",
+    "title": "Empowering Young Minds Through Creative Education",
+    "subtitle": "Join our academy to unlock your creative potential and develop skills for the future.",
+    "primaryButtonText": "Our Projects",
+    "primaryButtonLink": "/projects",
+    "secondaryButtonText": "Subscribe to Newsletter",
+    "secondaryButtonLink": "/contact"
+  },
+  "focusTitle": "We Focus on",
+  "focusAreas": [
+    { "icon": "fas fa-lightbulb", "animation": "pulse", "title": "Climate Change & Green Solutions" },
+    { "icon": "fas fa-users", "animation": "rotate", "title": "Democratic Participation, International Dialogue & Inclusion" },
+    { "icon": "fas fa-project-diagram", "animation": "bounce", "title": "Digitalization, Software & Tech" }
+  ],
+  "aboutPreview": {
+    "title": "❝ About Our Academy",
+    "missionTitle": "Our Mission",
+    "missionText": "Creative Youth Academy Hungary (CYA Hungary) is a dynamic youth organization founded based in Budapest, Hungary. Our mission is to empower young individuals, particularly those from disadvantaged backgrounds, by providing opportunities for personal growth, creative expression, and skill development.",
+    "visionTitle": "Our Vision",
+    "visionText": "We envision a society where every young person, regardless of their background, is inspired, empowered, and equipped to achieve their full potential while contributing meaningfully to their communities.",
+    "diversityTitle": "Diversity and Team Strength",
+    "diversityIntro": "Our team includes 20 core members and numerous volunteers aged 16-51. This diverse composition enhances our ability to:",
+    "diversityPoints": [
+      "Promote inclusion and representation in all our projects.",
+      "Develop innovative and empathetic programs that resonate with a wide range of participants."
+    ],
+    "ctaText": "Learn More About Us",
+    "ctaLink": "/about"
+  },
+  "podcastPreview": {
+    "title": "Latest Podcasts",
+    "viewMoreText": "View More",
+    "viewMoreLink": "/podcast"
+  },
+  "galleryPreview": {
+    "title": "Gallery Highlights",
+    "viewMoreText": "View More",
+    "viewMoreLink": "/gallery"
+  },
+  "testimonials": {
+    "title": "❝ What Our Ambassadors Say",
+    "items": [
+      {
+        "quote": "It was eye-opening to meet so many different cultures and it was really interesting to learn more about the environmental problems on earth and to talk about the current issues in the world.",
+        "author": "Zsofia Berzeviczy Elek"
+      },
+      {
+        "quote": "I'm very excited to share my recent experience with CYA in the Erasmus+ project on human rights! Joining this project, I already had background knowledge on social issues and human rights, but I didn't expect that this exchange would be so enriching!! Not only did I expand my knowledge by practice and doing, but also learnt new methodologies!",
+        "author": "Tetiana Shevchenko"
+      }
+    ],
+    "ctaText": "View Our Ambassadors",
+    "ctaLink": "/ambassadors"
+  }
+}

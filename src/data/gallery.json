@@ -1,0 +1,14 @@
+{
+  "gallery": [
+    { "image": "/upload/images/gallery/1.jpg", "title": "", "videoLink": "", "floating": true },
+    { "image": "/upload/images/gallery/2.jpg", "title": "", "videoLink": "", "floating": true },
+    { "image": "/upload/images/gallery/3.png", "title": "", "videoLink": "https://youtube.com", "floating": true },
+    { "image": "/upload/images/gallery/4.png", "title": "", "videoLink": "", "floating": false },
+    { "image": "/upload/images/gallery/4.png", "title": "", "videoLink": "", "floating": false },
+    { "image": "/upload/images/gallery/5.png", "title": "", "videoLink": "", "floating": false },
+    { "image": "/upload/images/gallery/6.png", "title": "", "videoLink": "", "floating": false },
+    { "image": "/upload/images/gallery/7.png", "title": "", "videoLink": "", "floating": false },
+    { "image": "/upload/images/gallery/8.png", "title": "", "videoLink": "", "floating": false },
+    { "image": "/upload/images/gallery/9.png", "title": "Coding Class", "videoLink": "https://youtube.com", "floating": false }
+  ]
+}

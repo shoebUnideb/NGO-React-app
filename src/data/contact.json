@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or want to get involved? We'd love to hear from you!"
+  },
+  "formTitle": "Subscribe to the Newsletter",
+  "successTitle": "Thank you for subscribing!",
+  "successText": "We have received your message and will get back to you soon.",
+  "infoTitle": "Contact Information",
+  "address": "1078 Budapest, Hungary",
+  "phone": "+36 20 414 6517",
+  "email": "info@becya.org"
+}

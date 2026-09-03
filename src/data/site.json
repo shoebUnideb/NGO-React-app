@@ -1,0 +1,15 @@
+{
+  "logoText": "CYA - Creative Youth Academy",
+  "logoImage": "/assets/images/logo.png",
+  "footerTagline": "Go Beyond & Initiative of Dreams",
+  "footerOrgName": "Creative Youth Academy",
+  "footerConnectTitle": "Connect With Us",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/cyaeurope/",
+    "twitter": "https://www.twitter.com/cyaeurope/",
+    "instagram": "https://www.instagram.com/cya.eu/",
+    "linkedin": "https://www.linkedin.com/company/cya-eu/?originalSubdomain=hu",
+    "youtube": "https://www.youtube.com/cyaeurope/",
+    "spotify": "https://open.spotify.com/show/09TQZ7q79f4DKPcBpFWuaa?si=5KGxHJybThGkVrRNX5DCmQ&nd=1&dlsi=6f734584120245e0"
+  }
+}

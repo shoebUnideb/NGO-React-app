@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AnimatedSection from '../components/AnimatedSection';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { useForm, ValidationError } from '@formspree/react';
+import contact from '../data/contact.json';
 import '../styles/main.css';
 
 const Contact = () => {
@@ -29,9 +30,9 @@ const Contact = () => {
         <section className="contact-hero">
           <div className="container">
             <AnimatedSection>
-              <h1 className="section-title">Contact Us</h1>
+              <h1 className="section-title">{contact.hero.title}</h1>
               <p className="subtitle">
-                Have questions or want to get involved? We'd love to hear from you!
+                {contact.hero.subtitle}
               </p>
             </AnimatedSection>
           </div>
@@ -41,8 +42,8 @@ const Contact = () => {
           <div className="container">
             <AnimatedSection>
               <div className="success-message">
-                <h2>Thank you for subscribing!</h2>
-                <p>We have received your message and will get back to you soon.</p>
+                <h2>{contact.successTitle}</h2>
+                <p>{contact.successText}</p>
                 <button 
                   className="btn btn-primary"
                   onClick={() => window.location.reload()}
@@ -75,7 +76,7 @@ const Contact = () => {
           <div className="contact-grid">
             <AnimatedSection delay={0.2}>
               <div className="contact-form">
-                <h2>Subscribe to the Newsletter</h2>
+                <h2>{contact.formTitle}</h2>
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <label htmlFor="name">Your Name</label>
@@ -148,39 +149,38 @@ const Contact = () => {
             
             <AnimatedSection delay={0.3}>
               <div className="contact-info">
-                <h2>Contact Information</h2>
-                
+                <h2>{contact.infoTitle}</h2>
+
                 <div className="info-item">
                   <div className="info-icon">
                     <FaMapMarkerAlt />
                   </div>
                   <div className="info-content">
                     <h3>Address</h3>
-                    <p>1078 Budapest,
-                    Hungary</p>
+                    <p>{contact.address}</p>
                   </div>
                 </div>
-                
+
                 <div className="info-item">
                   <div className="info-icon">
                     <FaPhone />
                   </div>
                   <div className="info-content">
                     <h3>Phone</h3>
-                    <p>+36 20 414 6517</p>
+                    <p>{contact.phone}</p>
                   </div>
                 </div>
-                
+
                 <div className="info-item">
                   <div className="info-icon">
                     <FaEnvelope />
                   </div>
                   <div className="info-content">
                     <h3>Email</h3>
-                    <p>info@becya.org</p>
+                    <p>{contact.email}</p>
                   </div>
                 </div>
-                
+
               </div>
             </AnimatedSection>
           </div>

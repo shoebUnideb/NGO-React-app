@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaSpotify } from 'react-icons/fa';
+import site from '../data/site.json';
 import '../styles/main.css';
 
 const Footer = () => {
@@ -16,12 +17,12 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-title" style={{ fontFamily: 'Segoe Script, cursive' }}>Creative Youth Academy</h3>
-            <p>Go Beyond & Initiative of Dreams</p>
+            <h3 className="footer-title" style={{ fontFamily: 'Segoe Script, cursive' }}>{site.footerOrgName}</h3>
+            <p>{site.footerTagline}</p>
           </div>
-          
+
           <div className="footer-section">
-            
+
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
               <li><a href="/projects">Projects</a></li>
@@ -31,28 +32,28 @@ const Footer = () => {
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
-          
+
           <div className="footer-section">
-            <h3 className="footer-title">Connect With Us</h3>
+            <h3 className="footer-title">{site.footerConnectTitle}</h3>
             <div className="social-links">
-              <a href="https://www.facebook.com/cyaeurope/" target="_blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaFacebook />
+              <a href={site.socialLinks.facebook} target="_blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaFacebook />
               </a>
-              <a href="https://www.twitter.com/cyaeurope/" target="_blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaTwitter />
+              <a href={site.socialLinks.twitter} target="_blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaTwitter />
               </a>
-              <a href="https://www.instagram.com/cya.eu/" target="_blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaInstagram />
+              <a href={site.socialLinks.instagram} target="_blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaInstagram />
               </a>
-              <a href="https://www.linkedin.com/company/cya-eu/?originalSubdomain=hu" target= "blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaLinkedin />
+              <a href={site.socialLinks.linkedin} target= "blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaLinkedin />
               </a>
-              <a href="https://www.youtube.com/cyaeurope/" target= "blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaYoutube />
+              <a href={site.socialLinks.youtube} target= "blank" rel="noreferrer" style={{ fmargin: '0 10px', fontSize: '30px'}}><FaYoutube />
               </a>
-              <a href="https://open.spotify.com/show/09TQZ7q79f4DKPcBpFWuaa?si=5KGxHJybThGkVrRNX5DCmQ&nd=1&dlsi=6f734584120245e0" target= "blank" rel="noreferrer" style={{ color: '#1DB954' ,fmargin: '0 10px', fontSize: '30px'}}><FaSpotify />
+              <a href={site.socialLinks.spotify} target= "blank" rel="noreferrer" style={{ color: '#1DB954' ,fmargin: '0 10px', fontSize: '30px'}}><FaSpotify />
               </a>
             </div>
           </div>
         </div>
-        
+
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Creative Youth Academy. All rights reserved.</p>
+          <p>&copy; {currentYear} {site.footerOrgName}. All rights reserved.</p>
         </div>
       </div>
     </motion.footer>

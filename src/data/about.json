@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "Who are we ?",
+    "subtitle": "Learn about our mission, vision, and the team behind Creative Youth Academy."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "Creative Youth Academy Hungary (CYA Hungary) is a dynamic youth organization founded based in Budapest, Hungary. Our mission is to empower young individuals, particularly those from disadvantaged backgrounds, by providing opportunities for personal growth, creative expression, and skill development. We are passionate about fostering inclusion and diversity, ensuring that youth with fewer opportunities—including individuals from low-income families, rural areas, refugee backgrounds, and those with disabilities—are supported and uplifted."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "We envision a society where every young person, regardless of their background, is inspired, empowered, and equipped to achieve their full potential while contributing meaningfully to their communities."
+  },
+  "impact": {
+    "title": "Our Impact",
+    "intro": "Since our establishment, Creative Youth Academy Hungary has reached over 1,000 individuals, including:",
+    "items": [
+      "and young adults interested in personal growth and creative expression.",
+      "Students seeking skill development and hands-on learning opportunities.",
+      "Youth workers and educators looking to enhance their methodologies and teaching practices.",
+      "Teachers and trainers participating in capacity-building initiatives to better support youth with fewer opportunities.",
+      "Our activities have directly impacted communities in Hungary and abroad, fostering cultural exchange, breaking down stereotypes, and building networks of mutual support and collaboration."
+    ]
+  },
+  "achievements": {
+    "title": "Achievements and Recognition",
+    "intro": "To date, we have:",
+    "items": [
+      "Partnered on enormous Erasmus+ projects across Europe, covering topics like digital skills, environmental sustainability, and social inclusion.",
+      "Designed and delivered workshops and training for youth workers, enabling them to adopt innovative methods in their roles.",
+      "Engaged participants from over 40 countries, fostering intercultural collaboration and learning.",
+      "Developed and implemented impactful community projects in Hungary, positively transforming local communities."
+    ]
+  },
+  "diversity": {
+    "title": "Diversity and Team Strength",
+    "intro": "Our team includes 20 core members and numerous volunteers aged 16-51. This diverse composition enhances our ability to:",
+    "items": [
+      "Promote inclusion and representation in all our projects.",
+      "Develop innovative and empathetic programs that resonate with a wide range of participants."
+    ]
+  },
+  "highlights": {
+    "intro": "Key highlights of our diverse team:",
+    "items": [
+      "Professionals in project management, media, arts, and education.",
+      "Dedicated volunteers contributing expertise in communications, social media, and event planning.",
+      "Active youth workers who bring grassroots-level insights into challenges faced by disadvantaged youth."
+    ]
+  },
+  "partnersTitle": "Meet Our Partners",
+  "partners": [
+    {
+      "image": "/upload/images/about/partner1.png",
+      "name": "COPERNICUS BERLIN",
+      "position": "",
+      "bio": "Born in the vibrant heart of Berlin in the year 2000, we are more than just an association - we're a global network."
+    },
+    {
+      "image": "/upload/images/about/partner2.png",
+      "name": "IMEPO",
+      "position": "",
+      "bio": "HELLENIC MIGRATION POLICY INSTITUTE"
+    },
+    {
+      "image": "/upload/images/about/partner3.png",
+      "name": "Sarah Johnson",
+      "position": "BRATISLAVA POLICY INSTITUTE",
+      "bio": "Professional artist dedicated to nurturing creative expression in young people."
+    }
+  ],
+  "techTeamTitle": "Technology Team",
+  "techTeam": [
+    {
+      "image": "/upload/images/about/me-.png",
+      "name": "Mohammad Shoeb",
+      "linkText": "Visit Linkedin",
+      "linkUrl": "https://www.linkedin.com/in/mohdshoeb2021/"
+    }
+  ]
+}

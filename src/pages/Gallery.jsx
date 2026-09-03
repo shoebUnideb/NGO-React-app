@@ -1,56 +1,11 @@
 import React from 'react';
 import AnimatedSection from '../components/AnimatedSection';
 import GalleryCard from '../components/GalleryCard';
+import galleryData from '../data/gallery.json';
 import '../styles/main.css';
 
 const Gallery = () => {
-  const galleryItems = [
-    {
-      image: "/upload/images/gallery/1.jpg",
-      floating: true
-    },
-    {
-      image: "/upload/images/gallery/2.jpg",
-      
-      floating: true
-    },
-    {
-      image: "/upload/images/gallery/3.png",
-      
-      videoLink: "https://youtube.com",
-      floating: true
-    },
-    {
-      image: "/upload/images/gallery/4.png",
-      
-    },
-    {
-      image: "/upload/images/gallery/4.png",
-     
-    },
-    {
-      image: "/upload/images/gallery/5.png",
-     
-    },
-    {
-      image: "/upload/images/gallery/6.png",
-     
-    },
-    {
-      image: "/upload/images/gallery/7.png",
-     
-    },
-    {
-      image: "/upload/images/gallery/8.png",
-    
-    },
-    {
-      image: "/upload/images/gallery/9.png",
-      title: "Coding Class",
-      videoLink: "https://youtube.com"
-    }
-    
-  ];
+  const galleryItems = galleryData.gallery;
 
   return (
     <div className="gallery-page">

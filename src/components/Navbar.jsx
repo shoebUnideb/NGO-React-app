@@ -2,9 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import site from '../data/site.json';
 import '../styles/main.css';
 
-const FULL_TEXT = 'CYA - Creative Youth Academy';
+const FULL_TEXT = site.logoText;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,9 +80,9 @@ const Navbar = () => {
     >
       <div className="container">
         <Link to="/" className="logo">
-          <img 
-            src="/assets/images/logo.png" 
-            alt="Creative Youth Academy Logo" 
+          <img
+            src={site.logoImage}
+            alt="Creative Youth Academy Logo"
             className="logo-image"
           />
           {displayedText.length > 0 && (
