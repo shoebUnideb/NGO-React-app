@@ -410,7 +410,8 @@
 }
 
 .admin-form {
-  max-width: 780px;
+  max-width: none;
+  width: 100%;
 }
 
 .admin-form-header {
@@ -462,12 +463,27 @@
   border: 1px solid #e4ecee;
   padding: 22px 24px;
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0 24px;
+  align-items: start;
 }
 
 .admin-section h2 {
+  grid-column: 1 / -1;
   margin: 0 0 16px;
   font-size: 1rem;
   color: var(--admin-primary);
+}
+
+/* Fields that need room (paragraphs, images, repeating lists, hints)
+   always span the full section width; short fields sit side by side. */
+.admin-field-textarea,
+.admin-field-image,
+.admin-field-list,
+.admin-field-boolean,
+.admin-hint {
+  grid-column: 1 / -1;
 }
 
 @media (max-width: 800px) {
