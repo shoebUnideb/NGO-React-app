@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+logo:
+  src: "/logo.png"
+  show_in_header: true
+
 media_folder: "public/upload/images"
 public_folder: "/upload/images"
 
