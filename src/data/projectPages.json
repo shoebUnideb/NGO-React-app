@@ -1,6 +1,12 @@
 {
   "pages": [
     {
+      "slug": "xx5rsg",
+      "title": "test",
+      "heroImage": "",
+      "blocks": []
+    },
+    {
       "slug": "visegrad",
       "title": "Visegrad Project",
       "heroImage": "/upload/images/visegrad/hero/visegrad.jpeg",
