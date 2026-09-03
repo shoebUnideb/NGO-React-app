@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
       /*
-        Decap CMS renders its own React app chrome with generated, unstable
-        class names, so we can only reliably brand the parts of the DOM that
-        are plain semantic elements: fonts, links, form controls, focus
-        rings and the page background. The sidebar/top-bar internals stay
-        Decap's default styling.
+        Decap's Emotion CSS-in-JS keeps each styled component's source name
+        as part of its runtime class (e.g. class="css-xxxxx-AppHeaderLogo"),
+        confirmed by grepping the shipped decap-cms.js bundle for `label:`
+        entries. [class*="Name"] below targets those directly, so this
+        reaches the actual app chrome, not just generic form elements.
       */
       :root {
         --cya-primary: #0d4986;
         --cya-secondary: #0b67df;
         --cya-accent: #bcd5cd;
+        --cya-accent-tint: #eaf2f0;
       }
 
       html, body {
@@ -56,6 +57,79 @@
         [data-slate-editor="true"], input, textarea {
           font-size: 16px !important;
         }
+      }
+
+      /* Top app bar: Contents / Media nav */
+      [class*="AppHeaderContent"] {
+        background-color: var(--cya-primary) !important;
+      }
+      [class*="AppHeaderNavLink"] {
+        color: rgba(255, 255, 255, 0.75) !important;
+      }
+      [class*="AppHeaderNavLink"][class*="active"],
+      [class*="AppHeaderNavLink"]:hover {
+        color: #ffffff !important;
+      }
+      [class*="AppHeaderQuickNewButton"],
+      [class*="AppHeaderButton"] {
+        background-color: var(--cya-secondary) !important;
+        color: #ffffff !important;
+      }
+
+      /* Collections sidebar */
+      [class*="SidebarContainer"] {
+        background-color: #ffffff !important;
+        border-right: 1px solid var(--cya-accent) !important;
+      }
+      [class*="SidebarHeading"] {
+        color: var(--cya-primary) !important;
+      }
+      [class*="SidebarNavLink"][aria-current="page"],
+      [class*="SidebarNavLink"].active {
+        background-color: var(--cya-accent-tint) !important;
+        color: var(--cya-primary) !important;
+        border-left: 3px solid var(--cya-secondary) !important;
+      }
+
+      /* Collection entry cards (Home Page / About Page / ... grid) */
+      [class*="CardGrid"] [class*="Card"] {
+        border-radius: 10px !important;
+        border: 1px solid var(--cya-accent) !important;
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+      }
+      [class*="CardGrid"] [class*="Card"]:hover {
+        box-shadow: 0 6px 16px rgba(13, 73, 134, 0.12) !important;
+        transform: translateY(-2px);
+      }
+      [class*="CardHeading"] {
+        color: var(--cya-primary) !important;
+      }
+
+      /* Entry editor top toolbar (back link / Published / Check for Preview) */
+      [class*="ToolbarContainer"] {
+        background-color: #ffffff !important;
+        border-bottom: 2px solid var(--cya-accent) !important;
+      }
+      [class*="PublishedButton"],
+      [class*="PublishButton"] {
+        background-color: var(--cya-secondary) !important;
+        color: #ffffff !important;
+      }
+
+      /* List/Object widget rows (the grey accordion bars, e.g. each Project) */
+      [class*="ObjectWidgetTopBar"],
+      [class*="ListItemTopBar"],
+      [class*="StyledListItemTopBar"] {
+        background-color: var(--cya-accent-tint) !important;
+        border-radius: 6px !important;
+      }
+      [class*="NestedObjectLabel"] {
+        color: var(--cya-primary) !important;
+      }
+      [class*="AddButton"] {
+        background-color: var(--cya-secondary) !important;
+        color: #ffffff !important;
+        border-radius: 6px !important;
       }
     </style>
   </head>
