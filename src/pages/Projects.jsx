@@ -5,6 +5,8 @@ import AnimatedSection from '../components/AnimatedSection';
 import projectsData from '../data/projects.json';
 import '../styles/main.css';
 
+const effectiveLink = (project) => (project.pageSlug ? `/projects/${project.pageSlug}` : project.link);
+
 const Projects = () => {
   const featured = projectsData.projects.find((p) => p.featured);
   const projects = projectsData.projects.filter((p) => !p.featured);
@@ -24,7 +26,7 @@ const Projects = () => {
               <div className="project-tags">
                 {featured.tags.map((tag, i) => <span key={i}>{tag}</span>)}
               </div>
-              <Link to={featured.link} className="btn btn-primary">View Project</Link>
+              <Link to={effectiveLink(featured)} className="btn btn-primary">View Project</Link>
             </div>
           </div>
         </div>
@@ -39,7 +41,7 @@ const Projects = () => {
                   description={project.description}
                   image={project.image}
                   tags={project.tags}
-                  link={project.link}
+                  link={effectiveLink(project)}
                 />
               </AnimatedSection>
             ))}

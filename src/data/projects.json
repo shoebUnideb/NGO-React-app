@@ -7,8 +7,9 @@
         "Visegrad, Hungary",
         " 2025"
       ],
-      "link": "/projects/visegrad",
-      "featured": true
+      "link": "",
+      "featured": true,
+      "pageSlug": "visegrad"
     },
     {
       "title": "A Journey Towards Sustainability",
@@ -18,7 +19,8 @@
         " Feb 2025"
       ],
       "link": "https://www.instagram.com/p/DHOrFPyTZo5/?igsh=Nzc3cXlmNmdlaWtp",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Youth Voices for European Citizenship",
@@ -28,7 +30,8 @@
         " Feb 2025"
       ],
       "link": "https://www.instagram.com/p/DGBzRLlu2ME/?igsh=MXg5b3RvaTc2bHFudQ%3D%3D",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Harmony Of Nature",
@@ -38,7 +41,8 @@
         " Jan 2025"
       ],
       "link": "https://www.instagram.com/p/DHQaca8RsFb/?igsh=ODhuYnN3aHh4cGt3&img_index=3",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Sustainable farming & Digital agriculture",
@@ -48,7 +52,8 @@
         " Jan 2025"
       ],
       "link": "https://www.instagram.com/p/DHSl726xGbX/?igsh=MWRiYmJlbHRncnAydg==",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Digital Entrepreneurship Bootcamp",
@@ -58,7 +63,8 @@
         " Nov 2024"
       ],
       "link": "https://www.instagram.com/p/DCMg0aRTtDG/?igsh=MXhyN2Jtc2w5dG12dw%3D%3D",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "EYZEN: Integrating AI into Education",
@@ -68,7 +74,8 @@
         " Oct 2024"
       ],
       "link": "https://www.instagram.com/p/DBrO7Z7sZEs/?igsh=MWxtZjUzdzhwaGdzdw%3D%3D",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Empowering Disadvantaged Students through Design Thinking",
@@ -78,7 +85,8 @@
         " Sept 2026"
       ],
       "link": "https://www.instagram.com/p/DHTu6fkTWl7/?igsh=OXh3ZzZibmI2b2Nn&img_index=10",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Eco Literate Project 2024",
@@ -88,7 +96,8 @@
         " Aug 2024"
       ],
       "link": "https://www.instagram.com/p/DHTK5MqTLP-/?igsh=MXN4amVmd2NpYzQ4bw%3D%3D&img_index=10",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Speak up, Make a Difference, Stop the Bullying",
@@ -98,7 +107,8 @@
         "  Aug 2024"
       ],
       "link": "https://www.instagram.com/reel/DDeLFzpSftt/?igsh=MWk4M3dxcjY3a2syeg%3D%3D",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Speak Up - Take Action",
@@ -108,7 +118,8 @@
         " 3 - 12 June 2023"
       ],
       "link": "https://i-vin.info/news/golos-molodi--reaguyuchi-na-viklik-migraciyi-%E2%80%93-dosvid-ukrayinskih-uchasnic-u-proyekti-speak-up-%E2%80%93-take-action-(foo)--5868.html",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "C.O.L.O.R doesn't matter",
@@ -118,7 +129,8 @@
         " 28 August - 06 September 2023"
       ],
       "link": "https://www.instagram.com/p/CzTsVgtoXPo/",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "PROTECT WILDLIFE AGAINST FIRES",
@@ -128,7 +140,8 @@
         " 2 - 11 January 2024"
       ],
       "link": "https://www.instagram.com/p/CzY6fOKtaKL/",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Youth's Water of Future' Water",
@@ -138,7 +151,8 @@
         " 1 - 9 September 2021"
       ],
       "link": "https://creativeyouthacademy.wordpress.com/youth-water-of-futures-water/",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "codE+tech",
@@ -148,7 +162,8 @@
         " 18 - 27 May 2022"
       ],
       "link": "https://creativeyouthacademy.wordpress.com/codetech/",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     },
     {
       "title": "Beyond Borders, Enhance Dialogue",
@@ -158,7 +173,8 @@
         " 1  - 10 August 2022"
       ],
       "link": "https://cya.my.canva.site/bbed",
-      "featured": false
+      "featured": false,
+      "pageSlug": ""
     }
   ]
 }

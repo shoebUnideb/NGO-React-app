@@ -1,54 +1,68 @@
 import React from 'react';
-import FormShell from '../FormShell';
-import TextField from '../fields/TextField';
-import ImageField from '../fields/ImageField';
-import ListField from '../fields/ListField';
-import BlockField from '../fields/BlockField';
 import { useJsonFile } from '../useJsonFile';
 
-const ProjectPagesForm = () => {
-  const { data, setData, loading, saving, error, success, save } =
-    useJsonFile('src/data/projectPages.json', 'Update project pages via admin panel');
+const ProjectPagesOverview = () => {
+  const { data: pagesData, loading: pagesLoading, error: pagesError } = useJsonFile('src/data/projectPages.json', '');
+  const { data: projectsData, loading: projectsLoading } = useJsonFile('src/data/projects.json', '');
 
-  if (loading || !data) return <FormShell title="Project Pages" loading={loading} error={error} />;
+  const loading = pagesLoading || projectsLoading;
+
+  if (loading || !pagesData) {
+    return (
+      <div className="admin-form">
+        <div className="admin-form-header"><h1>Project Pages</h1></div>
+        {pagesError ? (
+          <div className="admin-banner admin-banner-error">{pagesError}</div>
+        ) : (
+          <div className="admin-form-loading">Loading…</div>
+        )}
+      </div>
+    );
+  }
+
+  const linkedProjectFor = (slug) => {
+    if (!projectsData) return null;
+    return projectsData.projects.find((p) => p.pageSlug === slug) || null;
+  };
 
   return (
-    <FormShell title="Project Pages" loading={loading} saving={saving} error={error} success={success} onSave={save}>
+    <div className="admin-form">
+      <div className="admin-form-header"><h1>Project Pages</h1></div>
       <p className="admin-hint">
-        Each page here becomes a full page on the site at creativeyouthacademy.netlify.app/projects/&lt;slug&gt;.
-        Link a Project card to one by setting its Link field (on the Projects page) to /projects/&lt;slug&gt;.
+        Read-only overview of every project page. To create or edit one, open the matching
+        project in the Projects section and use "Create a Project Page for this".
       </p>
-      <ListField
-        label="Pages"
-        items={data.pages}
-        onChange={(pages) => setData({ ...data, pages })}
-        newItem={() => ({ slug: '', title: '', heroImage: '', blocks: [] })}
-        itemLabel={(item) => item.title || item.slug}
-        renderItem={(item, update) => (
-          <>
-            <TextField
-              label="Slug (URL: /projects/this-slug — lowercase, hyphens, no spaces)"
-              value={item.slug}
-              onChange={(v) => update({ ...item, slug: v })}
-            />
-            <TextField label="Title" value={item.title} onChange={(v) => update({ ...item, title: v })} />
-            <ImageField
-              label="Hero Image"
-              value={item.heroImage}
-              onChange={(v) => update({ ...item, heroImage: v })}
-              folder={`projectPages/${item.slug || 'untitled'}`}
-            />
-            <BlockField
-              label="Page Content"
-              blocks={item.blocks}
-              onChange={(blocks) => update({ ...item, blocks })}
-              folder={`projectPages/${item.slug || 'untitled'}`}
-            />
-          </>
-        )}
-      />
-    </FormShell>
+
+      <div className="admin-overview-grid">
+        {pagesData.pages.map((page) => {
+          const linkedProject = linkedProjectFor(page.slug);
+          return (
+            <div className="admin-overview-card" key={page.slug}>
+              {page.heroImage ? (
+                <img src={page.heroImage} alt="" className="admin-overview-thumb" />
+              ) : (
+                <div className="admin-overview-thumb admin-overview-thumb-empty">No image</div>
+              )}
+              <div className="admin-overview-body">
+                <h3>{page.title || page.slug}</h3>
+                <p className="admin-hint" style={{ margin: '4px 0' }}>
+                  /projects/{page.slug} · {page.blocks.length} block(s)
+                </p>
+                <p style={{ margin: 0, fontSize: '0.85rem' }}>
+                  {linkedProject ? (
+                    <>Linked from: <strong>{linkedProject.title}</strong></>
+                  ) : (
+                    <em>Not linked to any project</em>
+                  )}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+        {pagesData.pages.length === 0 && <p className="admin-list-empty">No project pages yet.</p>}
+      </div>
+    </div>
   );
 };
 
-export default ProjectPagesForm;
+export default ProjectPagesOverview;
