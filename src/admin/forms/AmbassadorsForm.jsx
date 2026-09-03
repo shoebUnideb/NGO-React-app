@@ -9,7 +9,7 @@ const AmbassadorsForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/ambassadors.json', 'Update Ambassadors via admin panel');
 
-  if (loading || !data) return <FormShell title="Ambassadors" loading={loading} />;
+  if (loading || !data) return <FormShell title="Ambassadors" loading={loading} error={error} />;
 
   return (
     <FormShell title="Ambassadors" loading={loading} saving={saving} error={error} success={success} onSave={save}>

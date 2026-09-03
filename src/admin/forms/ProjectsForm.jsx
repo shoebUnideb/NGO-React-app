@@ -10,7 +10,7 @@ const ProjectsForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/projects.json', 'Update Projects via admin panel');
 
-  if (loading || !data) return <FormShell title="Projects" loading={loading} />;
+  if (loading || !data) return <FormShell title="Projects" loading={loading} error={error} />;
 
   return (
     <FormShell title="Projects" loading={loading} saving={saving} error={error} success={success} onSave={save}>

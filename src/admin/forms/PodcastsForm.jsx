@@ -9,7 +9,7 @@ const PodcastsForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/podcasts.json', 'Update Podcasts via admin panel');
 
-  if (loading || !data) return <FormShell title="Podcasts" loading={loading} />;
+  if (loading || !data) return <FormShell title="Podcasts" loading={loading} error={error} />;
 
   return (
     <FormShell title="Podcasts" loading={loading} saving={saving} error={error} success={success} onSave={save}>

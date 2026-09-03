@@ -8,7 +8,7 @@ const ContactForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/contact.json', 'Update Contact page via admin panel');
 
-  if (loading || !data) return <FormShell title="Contact Page" loading={loading} />;
+  if (loading || !data) return <FormShell title="Contact Page" loading={loading} error={error} />;
 
   const set = (path, value) => setData((prev) => {
     const next = structuredClone(prev);

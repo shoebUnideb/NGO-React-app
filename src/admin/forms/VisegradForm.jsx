@@ -23,7 +23,7 @@ const VisegradForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/visegrad.json', 'Update Visegrad page via admin panel');
 
-  if (loading || !data) return <FormShell title="Visegrad Event Page" loading={loading} />;
+  if (loading || !data) return <FormShell title="Visegrad Event Page" loading={loading} error={error} />;
 
   const set = (key, value) => setData({ ...data, [key]: value });
 

@@ -21,7 +21,7 @@ const AboutForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/about.json', 'Update About page via admin panel');
 
-  if (loading || !data) return <FormShell title="About Page" loading={loading} />;
+  if (loading || !data) return <FormShell title="About Page" loading={loading} error={error} />;
 
   const set = (path, value) => setData((prev) => {
     const next = structuredClone(prev);

@@ -10,7 +10,7 @@ const GalleryForm = () => {
   const { data, setData, loading, saving, error, success, save } =
     useJsonFile('src/data/gallery.json', 'Update Gallery via admin panel');
 
-  if (loading || !data) return <FormShell title="Gallery" loading={loading} />;
+  if (loading || !data) return <FormShell title="Gallery" loading={loading} error={error} />;
 
   return (
     <FormShell title="Gallery" loading={loading} saving={saving} error={error} success={success} onSave={save}>
