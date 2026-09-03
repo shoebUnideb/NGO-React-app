@@ -1,36 +1,13 @@
+const OWNER = 'shoebUnideb';
+const REPO = 'NGO-React-app';
 const BRANCH = 'main';
 
-const GATEWAY_ROOT = `${window.location.origin}/.netlify/git`;
-
-// Git Gateway's own proxy (netlify/git-gateway's github.go) only allows paths
-// matching ^/github/(contents|git|pulls|branches|merges|statuses|compare|commits)
-// and injects the configured owner/repo itself before forwarding to GitHub's
-// Contents API — so the client must NOT include repos/{owner}/{repo} here.
-const API_ROOT = `${GATEWAY_ROOT}/github/contents`;
-
-// Decap CMS's own git-gateway backend always calls GET /.netlify/git/settings
-// before any /github/... request — skipping it is what caused our "Operator
-// microservice headers missing" errors, so every call ensures this ran once.
-let settingsPromise = null;
-function ensureGatewaySettings(token) {
-  if (!settingsPromise) {
-    settingsPromise = fetch(`${GATEWAY_ROOT}/settings`, {
-      headers: { Authorization: `Bearer ${token}` },
-    })
-      .then(async (res) => {
-        if (!res.ok) {
-          settingsPromise = null;
-          throw new Error(`Git Gateway settings check failed (${res.status})`);
-        }
-        return res.json();
-      })
-      .catch((err) => {
-        settingsPromise = null;
-        throw err;
-      });
-  }
-  return settingsPromise;
-}
+// Talks to GitHub's REST API directly from the browser (GitHub sends
+// Access-Control-Allow-Origin: * on these endpoints, confirmed by testing
+// against this repo) instead of going through Netlify's Git Gateway proxy,
+// which returns "Operator microservice headers missing" for every
+// authenticated request on this site regardless of hosting platform.
+const API_ROOT = `https://api.github.com/repos/${OWNER}/${REPO}`;
 
 function base64ToUtf8(base64) {
   const binary = atob(base64.replace(/\n/g, ''));
@@ -54,11 +31,12 @@ function arrayBufferToBase64(buffer) {
 }
 
 async function request(path, token, options = {}) {
-  await ensureGatewaySettings(token);
   const res = await fetch(`${API_ROOT}/${path}`, {
     ...options,
     headers: {
       Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
       ...(options.headers || {}),
     },
   });
@@ -70,20 +48,28 @@ async function request(path, token, options = {}) {
     } catch {
       detail = res.statusText;
     }
-    throw new Error(`Git Gateway request failed (${res.status}): ${detail}`);
+    throw new Error(`GitHub request failed (${res.status}): ${detail}`);
   }
   return res.json();
 }
 
+export async function verifyToken(token) {
+  const repoData = await request('', token);
+  if (!repoData.permissions || !repoData.permissions.push) {
+    throw new Error('This token does not have write access to the repository.');
+  }
+  return repoData;
+}
+
 export async function getJsonFile(path, token) {
-  const result = await request(`${path}?ref=${BRANCH}`, token);
+  const result = await request(`contents/${path}?ref=${BRANCH}`, token);
   const data = JSON.parse(base64ToUtf8(result.content));
   return { data, sha: result.sha };
 }
 
 export async function saveJsonFile(path, data, sha, message, token) {
   const content = utf8ToBase64(JSON.stringify(data, null, 2) + '\n');
-  const result = await request(path, token, {
+  const result = await request(`contents/${path}`, token, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message, content, sha, branch: BRANCH }),
@@ -97,7 +83,7 @@ export async function uploadImage(file, folder, token) {
   const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '-');
   const fileName = `${Date.now()}-${safeName}`;
   const path = `public/upload/images/${folder}/${fileName}`;
-  await request(path, token, {
+  await request(`contents/${path}`, token, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

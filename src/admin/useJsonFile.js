@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
-import { getJsonFile, saveJsonFile } from './gitGatewayApi';
+import { getJsonFile, saveJsonFile } from './githubApi';
 
 export function useJsonFile(path, commitMessage) {
   const { getToken } = useAuth();

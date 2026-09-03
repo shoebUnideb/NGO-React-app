@@ -71,6 +71,25 @@
   text-decoration: underline;
 }
 
+.admin-auth-help {
+  text-align: left;
+  margin: 16px 0 0;
+  padding-left: 20px;
+  font-size: 0.8rem;
+  color: #5a6b76;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-auth-help code {
+  background: var(--admin-accent-tint);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--admin-primary);
+  font-size: 0.78rem;
+}
+
 /* ---------- Shared form controls ---------- */
 
 .admin-field {

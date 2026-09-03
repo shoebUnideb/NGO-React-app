@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../AuthContext';
-import { uploadImage } from '../gitGatewayApi';
+import { uploadImage } from '../githubApi';
 
 const ImageField = ({ label, value, onChange, folder }) => {
   const { getToken } = useAuth();
