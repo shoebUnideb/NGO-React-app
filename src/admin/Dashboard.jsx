@@ -9,6 +9,7 @@ import PodcastsForm from './forms/PodcastsForm';
 import GalleryForm from './forms/GalleryForm';
 import ProjectPagesForm from './forms/ProjectPagesForm';
 import SiteForm from './forms/SiteForm';
+import HelpAssistant from './HelpAssistant';
 
 const SECTIONS = [
   { id: 'home', label: 'Home Page', Component: HomeForm },
@@ -52,6 +53,8 @@ const Dashboard = () => {
       <main className="admin-main">
         <ActiveForm key={activeId} />
       </main>
+
+      <HelpAssistant activeSection={activeId} activeLabel={active.label} />
     </div>
   );
 };
