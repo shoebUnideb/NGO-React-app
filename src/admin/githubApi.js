@@ -31,7 +31,12 @@ function arrayBufferToBase64(buffer) {
 }
 
 async function request(path, token, options = {}) {
-  const res = await fetch(`${API_ROOT}/${path}`, {
+  // A trailing slash (e.g. verifyToken's empty path) routes to a GitHub
+  // 404 handler whose CORS preflight omits Access-Control-Allow-Headers,
+  // which browsers reject outright as "Failed to fetch" — so never join
+  // with a trailing slash when path is empty.
+  const url = path ? `${API_ROOT}/${path}` : API_ROOT;
+  const res = await fetch(url, {
     ...options,
     headers: {
       Authorization: `Bearer ${token}`,
