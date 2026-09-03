@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useAuth } from '../AuthContext';
 import { uploadImage } from '../githubApi';
+import { cacheUploadedImage } from '../imageCache';
+import AdminImage from './AdminImage';
 
 const ImageField = ({ label, value, onChange, folder }) => {
   const { getToken } = useAuth();
@@ -15,6 +17,7 @@ const ImageField = ({ label, value, onChange, folder }) => {
     try {
       const token = await getToken();
       const path = await uploadImage(file, folder, token);
+      cacheUploadedImage(path, file);
       onChange(path);
     } catch (err) {
       setError(err.message || 'Upload failed');
@@ -29,7 +32,7 @@ const ImageField = ({ label, value, onChange, folder }) => {
       <span className="admin-field-label">{label}</span>
       <div className="admin-image-row">
         {value ? (
-          <img src={value} alt="" className="admin-image-preview" />
+          <AdminImage src={value} alt="" className="admin-image-preview" />
         ) : (
           <div className="admin-image-preview admin-image-preview-empty">No image</div>
         )}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AdminImage from './AdminImage';
 
 /**
  * Generic add/remove/reorder editor for an array field.
@@ -61,7 +62,7 @@ const ListField = ({ label, items = [], onChange, newItem, renderItem, itemLabel
           {items.map((item, index) => (
             <div className="admin-list-grid-card" key={index} onClick={() => setOpenIndex(index)}>
               {itemImage && itemImage(item, index) ? (
-                <img src={itemImage(item, index)} alt="" className="admin-list-grid-thumb" />
+                <AdminImage src={itemImage(item, index)} alt="" className="admin-list-grid-thumb" />
               ) : (
                 <div className="admin-list-grid-thumb admin-list-grid-thumb-empty">No image</div>
               )}

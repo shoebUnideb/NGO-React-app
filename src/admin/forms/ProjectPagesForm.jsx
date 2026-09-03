@@ -1,5 +1,6 @@
 import React from 'react';
 import { useJsonFile } from '../useJsonFile';
+import AdminImage from '../fields/AdminImage';
 
 const ProjectPagesOverview = () => {
   const { data: pagesData, loading: pagesLoading, error: pagesError } = useJsonFile('src/data/projectPages.json', '');
@@ -39,7 +40,7 @@ const ProjectPagesOverview = () => {
           return (
             <div className="admin-overview-card" key={page.slug}>
               {page.heroImage ? (
-                <img src={page.heroImage} alt="" className="admin-overview-thumb" />
+                <AdminImage src={page.heroImage} alt="" className="admin-overview-thumb" />
               ) : (
                 <div className="admin-overview-thumb admin-overview-thumb-empty">No image</div>
               )}
