@@ -369,6 +369,167 @@
   font-style: italic;
 }
 
+/* ---------- List field: grid view + popup editor ---------- */
+
+.admin-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.admin-list-grid-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e4ecee;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.admin-list-grid-card:hover {
+  border-color: var(--admin-accent);
+  box-shadow: 0 10px 24px rgba(13, 73, 134, 0.14);
+  transform: translateY(-2px);
+}
+
+.admin-list-grid-thumb {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  background: var(--admin-accent-tint);
+}
+
+.admin-list-grid-thumb-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8fa3ab;
+  font-size: 0.8rem;
+}
+
+.admin-list-grid-body {
+  padding: 12px 14px;
+}
+
+.admin-list-grid-title {
+  display: block;
+  font-weight: 500;
+  color: #1f2d33;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-list-grid-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--admin-accent);
+  border-radius: 50%;
+  color: var(--admin-danger);
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.admin-list-grid-card:hover .admin-list-grid-remove {
+  opacity: 1;
+}
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 30, 40, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.admin-modal {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(13, 73, 134, 0.25);
+  width: 100%;
+  max-width: 640px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.admin-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--admin-accent);
+  background: var(--admin-accent-tint);
+}
+
+.admin-modal-title {
+  font-weight: 600;
+  color: var(--admin-primary);
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-modal-header .admin-list-item-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.admin-modal-close {
+  background: #fff;
+  border: 1px solid var(--admin-accent);
+  border-radius: 5px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  color: var(--admin-primary);
+  font-size: 0.8rem;
+}
+
+.admin-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.admin-modal-footer {
+  padding: 14px 20px;
+  border-top: 1px solid var(--admin-accent);
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .admin-modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+  .admin-modal {
+    max-width: none;
+    max-height: 92vh;
+    border-radius: 14px 14px 0 0;
+  }
+}
+
 /* ---------- Dashboard shell ---------- */
 
 .admin-dashboard {

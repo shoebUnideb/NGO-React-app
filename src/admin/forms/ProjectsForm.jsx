@@ -62,6 +62,8 @@ const ProjectsForm = () => {
         onChange={setProjects}
         newItem={() => ({ title: '', image: '', tags: [], link: '', pageSlug: '', featured: false })}
         itemLabel={(item) => item.title}
+        itemImage={(item) => item.image}
+        view="grid"
         renderItem={(item, update) => {
           const linkedPage = pages.find((p) => p.slug === item.pageSlug);
           return (
