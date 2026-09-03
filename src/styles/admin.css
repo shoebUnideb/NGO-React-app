@@ -662,10 +662,31 @@
 
 .admin-help-suggestions {
   display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 14px 14px;
+  border-top: 1px solid #e4ecee;
+  max-height: 45%;
+  overflow-y: auto;
+}
+
+.admin-help-suggestions-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #8fa3ab;
+  margin-top: 4px;
+}
+
+.admin-help-suggestions-label:first-child {
+  margin-top: 0;
+}
+
+.admin-help-suggestions-row {
+  display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  padding: 10px 14px;
-  border-top: 1px solid #e4ecee;
 }
 
 .admin-help-suggestion-chip {
@@ -682,24 +703,6 @@
 
 .admin-help-suggestion-chip:hover {
   background: var(--admin-accent);
-}
-
-.admin-help-input-row {
-  display: flex;
-  gap: 8px;
-  padding: 12px 14px;
-  border-top: 1px solid #e4ecee;
-}
-
-.admin-help-input-row .admin-input {
-  flex: 1;
-  padding: 8px 10px;
-  font-size: 0.85rem;
-}
-
-.admin-help-input-row .admin-primary-button {
-  padding: 8px 16px;
-  font-size: 0.85rem;
 }
 
 @media (max-width: 600px) {
