@@ -19,6 +19,8 @@ const PodcastsForm = () => {
         onChange={(items) => setData({ ...data, podcasts: items })}
         newItem={() => ({ thumbnail: '', title: '', youtubeLink: '' })}
         itemLabel={(item) => item.title}
+        itemImage={(item) => item.thumbnail}
+        view="grid"
         renderItem={(item, update) => (
           <>
             <ImageField label="Thumbnail" value={item.thumbnail} onChange={(v) => update({ ...item, thumbnail: v })} folder="podcast" />

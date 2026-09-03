@@ -20,6 +20,8 @@ const GalleryForm = () => {
         onChange={(items) => setData({ ...data, gallery: items })}
         newItem={() => ({ image: '', title: '', videoLink: '', floating: false })}
         itemLabel={(item) => item.title || item.image}
+        itemImage={(item) => item.image}
+        view="grid"
         renderItem={(item, update) => (
           <>
             <ImageField label="Image" value={item.image} onChange={(v) => update({ ...item, image: v })} folder="gallery" />

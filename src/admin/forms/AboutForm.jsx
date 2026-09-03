@@ -87,6 +87,8 @@ const AboutForm = () => {
           onChange={(v) => set(['partners'], v)}
           newItem={() => ({ image: '', name: '', position: '', bio: '' })}
           itemLabel={(item) => item.name}
+          itemImage={(item) => item.image}
+          view="grid"
           renderItem={(item, update) => (
             <>
               <ImageField label="Image" value={item.image} onChange={(v) => update({ ...item, image: v })} folder="about" />
@@ -107,6 +109,8 @@ const AboutForm = () => {
           onChange={(v) => set(['techTeam'], v)}
           newItem={() => ({ image: '', name: '', linkText: '', linkUrl: '' })}
           itemLabel={(item) => item.name}
+          itemImage={(item) => item.image}
+          view="grid"
           renderItem={(item, update) => (
             <>
               <ImageField label="Image" value={item.image} onChange={(v) => update({ ...item, image: v })} folder="about" />

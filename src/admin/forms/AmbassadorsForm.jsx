@@ -19,6 +19,8 @@ const AmbassadorsForm = () => {
         onChange={(items) => setData({ ...data, ambassadors: items })}
         newItem={() => ({ image: '', name: '', instagram: '' })}
         itemLabel={(item) => item.name}
+        itemImage={(item) => item.image}
+        view="grid"
         renderItem={(item, update) => (
           <>
             <ImageField label="Photo" value={item.image} onChange={(v) => update({ ...item, image: v })} folder="ambassadors" />
