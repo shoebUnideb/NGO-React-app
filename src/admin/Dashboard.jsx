@@ -7,7 +7,7 @@ import ProjectsForm from './forms/ProjectsForm';
 import AmbassadorsForm from './forms/AmbassadorsForm';
 import PodcastsForm from './forms/PodcastsForm';
 import GalleryForm from './forms/GalleryForm';
-import VisegradForm from './forms/VisegradForm';
+import ProjectPagesForm from './forms/ProjectPagesForm';
 import SiteForm from './forms/SiteForm';
 
 const SECTIONS = [
@@ -15,10 +15,10 @@ const SECTIONS = [
   { id: 'about', label: 'About Page', Component: AboutForm },
   { id: 'contact', label: 'Contact Page', Component: ContactForm },
   { id: 'projects', label: 'Projects', Component: ProjectsForm },
+  { id: 'projectPages', label: 'Project Pages', Component: ProjectPagesForm },
   { id: 'ambassadors', label: 'Ambassadors', Component: AmbassadorsForm },
   { id: 'podcasts', label: 'Podcasts', Component: PodcastsForm },
   { id: 'gallery', label: 'Gallery', Component: GalleryForm },
-  { id: 'visegrad', label: 'Visegrad Page', Component: VisegradForm },
   { id: 'site', label: 'Site-wide (Navbar & Footer)', Component: SiteForm },
 ];
 

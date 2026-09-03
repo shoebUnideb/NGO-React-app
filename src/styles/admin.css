@@ -245,6 +245,53 @@
   cursor: pointer;
 }
 
+.admin-add-menu-wrap {
+  position: relative;
+}
+
+.admin-add-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: #fff;
+  border: 1px solid var(--admin-accent);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(13, 73, 134, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 5;
+  min-width: 160px;
+}
+
+.admin-add-menu button {
+  font-family: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: #1f2d33;
+  cursor: pointer;
+}
+
+.admin-add-menu button:hover {
+  background: var(--admin-accent-tint);
+  color: var(--admin-primary);
+}
+
+.admin-block-type-badge {
+  background: var(--admin-primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
 .admin-list-items {
   display: flex;
   flex-direction: column;
