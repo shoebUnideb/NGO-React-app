@@ -44,7 +44,7 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/admin/*"
+          path="/cms-66a9392433dd8765/*"
           element={(
             <Suspense fallback={null}>
               <AdminApp />
