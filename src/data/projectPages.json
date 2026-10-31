@@ -1,6 +1,37 @@
 {
   "pages": [
     {
+      "slug": "br5gj8",
+      "title": "CoHER — ConstructHer Future",
+      "heroImage": "/upload/images/projects/1793446954134-1.jpeg",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "English — Building confidence and connections in construction: CoHER local meet-up in Budapest",
+          "body": "5 October 2026 — CoHER / KIA Budapest Local Meet-up\n\nOn 5 October 2026, Kreatív Ifjúsági Akadémia Magyarország (KIA) brought together 22 participants at Arena in Budapest for a CoHER local meet-up focused on support networks, practical workplace skills and women’s participation in construction.\n\nThe group included ten female students in construction-related vocational education, three educators and an industry representative. Twelve attendees were women.\n\nFacilitated by Heemanshu Gupta, the event gave participants space to discuss the challenges women face in construction and explore solutions together. Using Module B scenario cards, groups roleplayed situations involving workplace communication and safety, then discussed possible responses.\n\nParticipants also explored the CoHER platform and educational materials. They particularly valued the practical exercises and direct conversations with educators and the industry representative. Suggestions for future events included more time for the exercises and involving more industry representatives.\n\n“It was very useful to see the challenges other girls face in the construction industry, and it was good to find solutions together.”\n\n“It was very useful to discuss practical situations with the industry expert and the teachers. I feel much more confident about my future career in construction.”\n\nBoth quotations are translated from Hungarian.\n\nParticipants received certificates, and the event concluded with informal networking.\n\nThe meet-up contributed to CoHER’s support-network, soft-skills and feedback activities.\n\nLearn more about ConstructHer Future: https://constructherfuture.eu/\n\nCo-funded by the European Union.\nProject number: 2024-1-IE01-KA220-VET-000257661\n\n#CoHER #ConstructHerFuture #ErasmusPlus #WomenInConstruction #VocationalEducation #KIA"
+        },
+        {
+          "type": "gallery",
+          "heading": "CoHER / KIA Budapest Local Meet-up — 5 October 2026",
+          "images": [
+            "/upload/images/projectPages/br5gj8/1793446986825-2.jpeg"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Magyar — Kapcsolatok és önbizalom az építőiparban – CoHER-találkozó Budapesten",
+          "body": "2026. október 5. — CoHER / KIA Budapest Local Meet-up\n\n2026. október 5-én a Kreatív Ifjúsági Akadémia Magyarország (KIA) 22 résztvevővel rendezett helyi CoHER-találkozót a budapesti Arénában. A program középpontjában a támogató kapcsolatok kialakítása, a munkahelyi készségek gyakorlása és a nők építőipari részvétele állt.\n\nA résztvevők között tíz, építőiparhoz kapcsolódó szakképzésben tanuló lány, három oktató és egy iparági képviselő is jelen volt. Összesen tizenkét nő vett részt az eseményen.\n\nA Heemanshu Gupta által vezetett programon a résztvevők megvitatták az építőiparban dolgozó vagy oda készülő nők előtt álló kihívásokat, és közösen kerestek megoldásokat. A B modul szituációs kártyáival munkahelyi kommunikációs és biztonsági helyzeteket játszottak el, majd megbeszélték a lehetséges válaszokat.\n\nA résztvevők a CoHER online platformjával és tananyagaival is megismerkedtek. Különösen értékesnek tartották az életszerű gyakorlatokat, valamint az oktatókkal és az iparági képviselővel folytatott közvetlen beszélgetéseket. A következő alkalmakra több időt javasoltak a gyakorlati feladatokra, és szívesen találkoznának több iparági szakemberrel.\n\n“Nagyon hasznos volt látni, hogy más lányok milyen kihívásokkal szembesülnek az építőiparban, és jó volt közösen megoldásokat találni.”\n\n“Nagyon hasznos volt a gyakorlati helyzetek átbeszélése az iparági szakértővel és a tanárokkal. Sokkal magabiztosabbnak érzem magam a jövőbeli építőipari karrieremmel kapcsolatban.”\n\nA résztvevők részvételi igazolást kaptak, a programot pedig kötetlen beszélgetés és kapcsolatépítés zárta.\n\nA találkozó a CoHER projekt támogató hálózatépítési, készségfejlesztési és értékelési tevékenységeihez kapcsolódott.\n\nTovábbi információ a ConstructHer Future projektről: https://constructherfuture.eu/\n\nAz Európai Unió társfinanszírozásával.\nProjektazonosító: 2024-1-IE01-KA220-VET-000257661\n\n#CoHER #ConstructHerFuture #ErasmusPlus #NőkAzÉpítőiparban #Szakképzés #KIA"
+        },
+        {
+          "type": "cta",
+          "heading": "Learn more / További információ",
+          "text": "",
+          "buttonText": "ConstructHer Future / CoHER",
+          "buttonLink": "https://constructherfuture.eu/"
+        }
+      ]
+    },
+    {
       "slug": "b29bws",
       "title": "INCLUDE — October 2026: One Year of INCLUDE: Keeping Inclusion at the Centre",
       "heroImage": "/upload/images/projects/1792528545740-source-tpm2-planning.jpg",
