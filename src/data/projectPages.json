@@ -1,6 +1,61 @@
 {
   "pages": [
     {
+      "slug": "229y86",
+      "title": "SHIFT: how youth workers explored AI, IoT and gamified learning in Lithuania",
+      "heroImage": "/upload/images/projects/1793509918970-SHIFT_05.jpg",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "SHIFT: how youth workers explored AI, IoT and gamified learning in Lithuania",
+          "body": "From 15 to 22 October 2026, Inovatyvi karta (Innovative Generation) hosted the international training course SHIFT – Smart Hands-on Innovation & Facilitation Tech in Youth Work. The course took place near Trakai, Lithuania. It brought together 29 youth workers, youth leaders, project managers and educators from 13 countries who work with young people every day: Armenia, Azerbaijan, Bulgaria, Georgia, Hungary, Lithuania, Romania, Serbia, Slovakia, Slovenia, Spain, Türkiye and Ukraine.\n\nThe aim of SHIFT was to give youth workers practical knowledge, digital tools and ethical frameworks. With these, they can bring Artificial Intelligence, the Internet of Things (IoT) and gamified learning into modern youth work. The focus was on trying, not on heavy theory."
+        },
+        {
+          "type": "text",
+          "heading": "From AI basics to AI agents",
+          "body": "After the first day of team building, the group looked at the past, present and future of Artificial Intelligence. Participants tested AI tools, explored how AI can support youth exchanges and other youth projects, and experimented with AI agents and AI-powered spaces."
+        },
+        {
+          "type": "text",
+          "heading": "IoT and gamified learning, hands-on",
+          "body": "The IoT days turned the training room into a lab. Smart locks, QR codes, ropes and puzzles became an escape-room style challenge. Participants solved it in teams and then took it apart to see how it was built. The next day was dedicated to gamified learning: how game elements can raise motivation and teamwork in non-formal education."
+        },
+        {
+          "type": "text",
+          "heading": "Ethics, safety and well-being",
+          "body": "Innovation needs responsibility. A session on AI and cybersecurity and open debates on ethical dilemmas pushed the group to reflect. One question was whether youth workers should report a young person who tracks an ex-partner's phone. Data protection and safe technology use were part of the whole programme. So was well-being: daily well-being time, movement and offline moments helped the group keep a healthy balance with screens."
+        },
+        {
+          "type": "text",
+          "heading": "Learning from local practice",
+          "body": "On day four the group visited Trakai Youth Center. A local youth worker shared how youth work operates in Lithuania and what her daily work looks like. The afternoon continued with well-being time in Trakai."
+        },
+        {
+          "type": "text",
+          "heading": "From ideas to action",
+          "body": "In the last days participants chose tools, worked in production teams and showcased their creations. They then planned follow-up and dissemination activities for their organisations and local communities. Evenings were filled with reflection groups, socialising and intercultural nights.\n\nThe learning does not stop here. Participants will meet again online for an evaluation call on 10 December 2026 to share how they have used SHIFT in their work.\n\nWe thank all participants, our trainers Gvantsa Mezvrishvili and Vytautas Šliuburys, project manager Artūrs Paparde, and our partners for supporting participants.\n\nCo-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the Youth Affairs Agency. Neither the European Union nor the granting authority can be held responsible for them."
+        },
+        {
+          "type": "gallery",
+          "heading": "SHIFT in Lithuania — photos from the training course",
+          "images": [
+            "/upload/images/projectPages/229y86/1793510028391-SHIFT_01.jpg",
+            "/upload/images/projectPages/229y86/1793510025572-SHIFT_02.jpg",
+            "/upload/images/projectPages/229y86/1793510022475-SHIFT_03.jpg",
+            "/upload/images/projectPages/229y86/1793510018367-SHIFT_04.jpg",
+            "/upload/images/projectPages/229y86/1793510015008-SHIFT_06.jpg",
+            "/upload/images/projectPages/229y86/1793510011441-SHIFT_07.jpg",
+            "/upload/images/projectPages/229y86/1793510002155-SHIFT_08.jpg",
+            "/upload/images/projectPages/229y86/1793509998626-SHIFT_09.jpg",
+            "/upload/images/projectPages/229y86/1793509995412-SHIFT_10.jpg",
+            "/upload/images/projectPages/229y86/1793509978152-SHIFT_11.jpg",
+            "/upload/images/projectPages/229y86/1793509968265-SHIFT_12.jpg",
+            "/upload/images/projectPages/229y86/1793509954020-SHIFT_13.jpg"
+          ]
+        }
+      ]
+    },
+    {
       "slug": "br5gj8",
       "title": "CoHER — ConstructHer Future",
       "heroImage": "/upload/images/projectPages/br5gj8/1793446986825-2.jpeg",
