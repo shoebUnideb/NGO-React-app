@@ -90,6 +90,30 @@
           ]
         },
         {
+          "type": "text",
+          "heading": "2026. augusztus 10. — HU | Mentorokat keresünk a CoHER programhoz",
+          "body": "Van építőipari vagy kapcsolódó műszaki tapasztalatod, amelyet szívesen megosztanál egy pályája elején járó nővel? A Kreatív Ifjúsági Akadémia Magyarország mentorok jelentkezését várja a CoHER mentorprogramba. Nők és férfiak egyaránt lehetnek mentorok. Korábbi mentorálási tapasztalat nem szükséges.\n\nA mentor egy építőipar iránt érdeklődő női szakképzésben tanulót vagy pályakezdő nőt támogat. A beszélgetések során segíthetsz neki megismerni a szakmai lehetőségeket, a munkahelyi helyzeteket és a fejlődéséhez szükséges készségeket. A feladatod a tapasztalataid megosztása, a kérdések meghallgatása és a használható visszajelzés. A mentorált a saját céljairól és következő lépéseiről maga dönt.\n\nÉrdekel a mentorálás? Írj az info@becya.org címre, és néhány mondatban mutasd be a szakmai területedet, tapasztalatodat és azt, miért vennél részt."
+        },
+        {
+          "type": "text",
+          "heading": "10 August 2026 — EN | Mentors wanted for CoHER",
+          "body": "Do you have experience in construction or a related technical field that you would like to share with a woman starting her career? Kreatív Ifjúsági Akadémia Magyarország invites expressions of interest from CoHER mentors. Women and men can both be mentors. Previous mentoring experience is not required.\n\nA mentor supports a female VET learner interested in construction or an early-career woman in the sector. Conversations can help her understand career routes, workplace situations and useful skills. Your role is to share experience, listen to her questions and offer constructive guidance. The mentee makes her own decisions about her goals and next steps.\n\nInterested in mentoring? Email info@becya.org with a short introduction to your field, experience and reason for taking part."
+        },
+        {
+          "type": "cta",
+          "heading": "Mentorjelentkezés / Mentor enquiries",
+          "text": "",
+          "buttonText": "info@becya.org",
+          "buttonLink": "mailto:info@becya.org"
+        },
+        {
+          "type": "gallery",
+          "heading": "CoHER — Mentorokat keresünk / Mentors wanted",
+          "images": [
+            "/upload/images/projectPages/br5gj8/1793873115353-KIA_CoHER_Call_for_Mentors_HU_EN.png"
+          ]
+        },
+        {
           "type": "cta",
           "heading": "Learn more / További információ",
           "text": "",
