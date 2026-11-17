@@ -1,6 +1,38 @@
 {
   "pages": [
     {
+      "slug": "tg8pkh",
+      "title": "Social Europe: More Than Words? – Erasmus+ Youth Exchange in Greece",
+      "heroImage": "/upload/images/projects/1794937837447-IMG_20260827_140857.jpg",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "Social Europe: More Than Words? – Erasmus+ Youth Exchange in Greece",
+          "body": "Kreatív Ifjúsági Akadémia Magyarország took part as the Hungarian partner in Social Europe: More Than Words?, an Erasmus+ Youth Exchange held in Thessaloniki, Greece, from 21 to 28 August 2026. The project brought together young people from France, Bulgaria, Greece and Hungary.\n\nThe exchange focused on the idea of a social Europe. Participants explored social rights in the European Union, equal opportunities, access to the labour market and the inequalities that affect people across Europe.\n\nThe programme was built around discussion and shared learning. Workshops, debates and artistic and cultural activities offered different ways for young people to examine these topics and compare experiences from their countries.\n\nWe are grateful to the organisers, our partners and the young participants for the opportunity to take part in this international exchange."
+        },
+        {
+          "type": "text",
+          "heading": "Social Europe: More Than Words? – Erasmus+ ifjúsági csere Görögországban",
+          "body": "A Kreatív Ifjúsági Akadémia Magyarország magyar partnerként vett részt a Social Europe: More Than Words? című Erasmus+ ifjúsági cserében, amelyet 2026. augusztus 21. és 28. között rendeztek meg a görögországi Thesszaloníkiben. A projekt francia, bolgár, görög és magyar fiatalokat hozott össze.\n\nA csere középpontjában a szociális Európa gondolata állt. A résztvevők az Európai Unióban érvényesülő szociális jogokkal, az esélyegyenlőséggel, a munkavállalási lehetőségekkel és az európai társadalmakban tapasztalható egyenlőtlenségekkel foglalkoztak.\n\nA program a párbeszédre és a közös tanulásra épült. A műhelyfoglalkozások, viták, valamint művészeti és kulturális tevékenységek többféle lehetőséget adtak a témák feldolgozására és a különböző országok tapasztalatainak megismerésére.\n\nKöszönjük a szervezőknek, partnereinknek és a résztvevő fiataloknak, hogy részesei lehettünk ennek a nemzetközi ifjúsági cserének."
+        },
+        {
+          "type": "gallery",
+          "heading": "Social Europe — Thessaloniki / Thesszaloníki",
+          "images": [
+            "/upload/images/projectPages/tg8pkh/1794937904396-IMG_20260826_213527.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937900227-IMG-20260826-WA0030.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937897428-IMG-20260826-WA0091.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937892651-IMG_20260827_213906.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937887564-IMG_20260824_224432.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937883006-IMG_20260824_151030.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937878451-IMG_20260823_154944.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937874089-IMG_20260823_155300.jpg",
+            "/upload/images/projectPages/tg8pkh/1794937869873-IMG_20260822_151640_edit_37261167319065.jpg"
+          ]
+        }
+      ]
+    },
+    {
       "slug": "tf8198",
       "title": "CoHER Mentorship — Mentors and Mentees",
       "heroImage": "/upload/images/projectPages/tf8198/1793874364355-coher-logo-cover.svg",
